@@ -89,7 +89,7 @@ body {
   // background-color: #181b29;
   background-color: #fbfaf5;
   // background-color: rgb(235, 230, 230);
-  color: var(--third-color);
+  color: hsl(224, 56%, 12%);
 }
 
 ul {
@@ -141,6 +141,7 @@ a {
     padding: 2rem;
     transition: 0.5s;
     background-color: var(--first-color);
+    padding: 2rem;
   }
 }
 
@@ -189,6 +190,27 @@ a {
   padding-bottom: 2rem;
 }
 
+.section-title {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--second-color);
+  }
+}
+
 .btn {
   // display: inline-block;
   padding: 0.5rem 1rem;
@@ -213,6 +235,9 @@ a {
   width: 100%;
   padding: 4rem 0 14rem;
   color: black;
+  .home__text {
+    align-self: center;
+  }
   h1 {
     font-size: var(--big-font-size);
     font-weight: var(--font-semi);
@@ -243,7 +268,23 @@ a {
 }
 
 .about {
-  background-color: red;
+  color: black;
+
+  &__container {
+    row-gap: 2rem;
+    text-align: center;
+  }
+  &_subtitle {
+    margin-bottom: var(--mb-2);
+  }
+  &__img {
+    justify-self: center;
+
+    & img {
+      width: 200px;
+      border-radius: 0.5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 400px) {
@@ -261,6 +302,9 @@ a {
 }
 
 @media screen and (min-width: 900px) {
+  .nav {
+    padding: 1rem;
+  }
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
