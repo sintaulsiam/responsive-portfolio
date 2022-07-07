@@ -1,7 +1,6 @@
 {
   "name": "mysite",
   "version": "1.0.0",
-  "main": "index.html",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "parcel-bundler": "^1.12.5",
