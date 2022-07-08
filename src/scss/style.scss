@@ -431,3 +431,28 @@ a {
     margin-left: auto;
   }
 }
+
+.footer {
+  background-color: var(--first-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+  margin: -1rem;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  &__social {
+    margin-bottom: var(--mb-4);
+  }
+  &__icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2);
+  }
+  &__copy {
+    font-size: var(--smaller-font-size);
+  }
+}
