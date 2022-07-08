@@ -3,5 +3,7 @@ const navMenu = document.querySelector('.nav-menu')!;
 
 navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('nav-menu-show');
+  navToggle.classList.toggle('nav-toggle-active');
 }
 )
+
