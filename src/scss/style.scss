@@ -261,7 +261,7 @@ a {
   position: relative;
   row-gap: 5rem;
   width: 100%;
-  padding: 4rem 0 14rem;
+  padding: 4rem 0.5rem 14rem;
   color: black;
   .home__text {
     align-self: center;
@@ -291,7 +291,7 @@ a {
     height: 250px;
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 20px;
   }
 }
 
@@ -409,4 +409,25 @@ a {
 .skills__img {
   border-radius: 0.5rem;
   width: 250px;
+}
+
+.contact {
+  &__input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+  }
+  &__button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+  }
 }
