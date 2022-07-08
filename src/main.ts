@@ -32,3 +32,17 @@ navLinks.forEach(link => {
 // }, IOptions);
 
 // observer.observe();
+
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 200,
+    reset: true
+});
+
+sr.reveal(".home__text, .about__img,.skills__subtitle, .skills__text")
+sr.reveal('.home_img, .about_subtitle, .about_text, .skills__img',{delay: 400});
+sr.reveal('.skills_data,.contact__input',{interval: 200}); 
+
