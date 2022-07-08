@@ -22,16 +22,29 @@ navLinks.forEach(link => {
   )
 })
 
-// let IOptions = {
-//   root: null,
-//   rootMargin: '0px',
-//   threshold: 1.0
-// }
-// let observer = new IntersectionObserver((e) => {
-//   console.log(e);
-// }, IOptions);
 
-// observer.observe();
+const sections = document.querySelectorAll('.section')!;
+const home = document.querySelector('.home');
+
+let IOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.6
+}
+
+let observer = new IntersectionObserver( (entries) => {
+  entries.forEach(entry => {
+      document.querySelector('.nav-menu a[href*=' + entry.target.id + ']')!.classList.toggle('active', entry.isIntersecting);
+    
+      });
+},IOptions);
+
+sections.forEach( section => {
+  observer.observe(section);
+})
+
+observer.observe(home);
+
 
 
 const sr = ScrollReveal({
@@ -40,7 +53,7 @@ const sr = ScrollReveal({
   duration: 2000,
   delay: 200,
     reset: true
-});
+})!;
 
 sr.reveal(".home__text, .about__img,.skills__subtitle, .skills__text")
 sr.reveal('.home_img, .about_subtitle, .about_text, .skills__img',{delay: 400});
