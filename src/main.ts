@@ -24,13 +24,15 @@ navLinks.forEach(link => {
 
 
 const sections = document.querySelectorAll('.section')!;
-const home = document.querySelector('.home');
+const home = document.querySelector('.home')!;
+const links = document.querySelectorAll('.nav_link')!;
 
 let IOptions = {
   root: null,
   rootMargin: '0px',
   threshold: 0.6
 }
+
 
 let observer = new IntersectionObserver( (entries) => {
   entries.forEach(entry => {

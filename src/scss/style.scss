@@ -494,7 +494,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
-    margin: 1rem;
+    margin: auto;
   }
   .about_text {
     text-align: justify;
@@ -506,9 +506,11 @@ a {
 
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     justify-content: center;
     column-gap: 1rem;
     margin: 1rem;
+    margin: auto;
 
     .skills_img_container {
       display: flex;
