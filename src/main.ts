@@ -61,3 +61,8 @@ sr.reveal(".home__text, .about__img,.skills__subtitle, .skills__text")
 sr.reveal('.home_img, .about_subtitle, .about_text, .skills__img',{delay: 400});
 sr.reveal('.skills_data,.contact__input',{interval: 200}); 
 
+const contactForm = document.querySelector('.contact__form')! as HTMLInputElement;
+const nameField = document.querySelector('.contact__name')! as HTMLInputElement;
+const emailField = document.querySelector('.contact__email')! as HTMLInputElement;
+const messageField = document.querySelector('.contact__message')! as HTMLInputElement;
+const submitButton = document.querySelector('.contact__button')!;
